@@ -11,7 +11,6 @@ function App() {
   const [sortBy, setSortBy] = useState("none"); // "none", "name", or "weight"
   const [hiddenHogs, setHiddenHogs] = useState([]);
 
-  // Add a new hog
   function handleAddHog(newHog) {
     setHogs([...hogs, newHog]);
   }
@@ -33,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <FilterSort
+      <Filter
         showGreased={showGreased}
         onToggleGreased={() => setShowGreased(!showGreased)}
         sortBy={sortBy}
