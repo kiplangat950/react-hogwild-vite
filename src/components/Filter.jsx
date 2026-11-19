@@ -1,6 +1,6 @@
 import React from "react";
 
-function FilterSort({ showGreased, onToggleGreased, sortBy, onChangeSort }) {
+function Filter({ showGreased, onToggleGreased, sortBy, onChangeSort }) {
   return (
     <div className="ui form" style={{ margin: "20px" }}>
       <div className="inline fields">

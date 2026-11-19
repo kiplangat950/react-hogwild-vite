@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Nav from "./Nav";
-import FilterSort from "./FilterSort";
+import Filter from "./Filter";
 import HogForm from "./HogForm";
 import HogList from "./HogList";
 import hogsData from "../porkers_data";
