@@ -33,4 +33,4 @@ function Filter({ showGreased, onToggleGreased, sortBy, onChangeSort }) {
   );
 }
 
-export default FilterSort;
+export default Filter;
