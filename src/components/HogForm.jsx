@@ -6,7 +6,11 @@ function HogForm({ onAddHog }) {
   const [weight, setWeight] = useState("");
   const [greased, setGreased] = useState(false);
   const [medal, setMedal] = useState("wood");
-  const = useState("");
+  const imageState = useState("");
+const image = imageState[0];
+const setImage = imageState[1];
+
+
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -29,10 +33,10 @@ function HogForm({ onAddHog }) {
 
   return (
     <form className="ui form" style={{ margin: "20px" }} onSubmit={handleSubmit}>
-      <h3>Add a New Hog</h3>
+      <h2>Add a New Hog</h2>
       <div className="fields">
         <div className="field">
-          <label htmlFor="hog-name">Name</label>
+          <label htmlFor="hog-name">Name:</label>
           <input
             id="hog-name"
             type="text"
@@ -42,7 +46,7 @@ function HogForm({ onAddHog }) {
           />
         </div>
         <div className="field">
-          <label htmlFor="hog-specialty">Specialty</label>
+          <label htmlFor="hog-specialty">Specialty:</label>
           <input
             id="hog-specialty"
             type="text"
@@ -51,7 +55,7 @@ function HogForm({ onAddHog }) {
           />
         </div>
         <div className="field">
-          <label htmlFor="hog-weight">Weight</label>
+          <label htmlFor="hog-weight">Weight:</label>
           <input
             id="hog-weight"
             type="number"

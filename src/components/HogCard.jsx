@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 
 function HogCard({ hog, onHideHog }) {
@@ -15,14 +14,21 @@ function HogCard({ hog, onHideHog }) {
       </div>
       <div className="content">
         <h3>{hog.name}</h3>
+    
         {showDetails && (
-          <div className="description">
-            <p>Specialty: {hog.specialty}</p>
-            <p>Weight: {hog.weight}</p>
-            <p>Greased: {hog.greased ? "Yes" : "No"}</p>
-            <p>Highest Medal Achieved: {hog["highest medal achieved"]}</p>
-          </div>
-        )}
+  <div className="description">
+    <p>Specialty: {hog.specialty}</p>
+    <p>
+      Weight: <span>{hog.weight}</span>
+    </p>
+    <p>{hog.greased ? "Greased" : "Nongreased"}</p>
+    <p>
+      Highest Medal Achieved: <span>{hog["highest medal achieved"]}</span>
+    </p>
+  </div>
+)}
+
+        
       </div>
       <div className="extra content">
         <button
